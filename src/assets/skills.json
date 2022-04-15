@@ -1,0 +1,51 @@
+{"tiles" : [
+    {
+        "title": "Go",
+        "content": "Go is the most powerful, performant, and scalable programming language for creating web applications, web APIs, micro-services, and other distributed services.",
+        "icon": "/images/go.png"
+    },
+    {
+        "title": "React",
+        "content": "React is a declarative, efficient, and flexible JavaScript library for building user interfaces",
+        "icon": "/images/react.png"
+    },
+    {
+        "title": "Node & Typescript",
+        "content": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project",
+        "icon": "/images/nodejs.png"
+    },
+    {
+        "title": "Python",
+        "content": "Python is a popular programming language for that can be used for web development (server-side),software development, scripting.",
+        "icon": "/images/python.png"
+    },
+    {
+        "title": "Vue js",
+        "content": "Vue js is a progressive framework for building user interfaces.",
+        "icon": "/images/vuejs.png"
+    },
+    {
+        "title": "Databases",
+        "content": "I can work with SQL and No-SQL Databases. I am familiar with MYSQL, PostgresQL and MongoDb",
+        "icon": "/images/postgresql.png"
+    },
+    {
+        "title": "Docker",
+        "content": "Docker is an open source containerization platform. It enables developers to package applications into containers",
+        "icon": "/images/docker.png"
+    },
+    {
+        "title": "Web3 js",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natusfacere animi ratione suscipit!",
+        "icon": "/images/typescript.png"
+    },
+    {
+        "title": "Styling",
+        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natusfacere animi ratione suscipit!",
+        "icon": "/images/sass.png"
+    }
+],
+"subcontent1": "",
+"subcontent2": ""
+
+}

@@ -1,0 +1,41 @@
+{"tiles" : [
+    {
+        "title": "Nationality",
+        "content": "Nigerian--  | ---National Security Id-> 1212121212",
+        "icon": "/images/nigeria.png"
+    },
+    {
+        "title": "Top Skills",
+        "content": "React | Go | node",
+        "icon": "/images/topskills.png"
+    },
+    {
+        "title": "Hobbies",
+        "content": " ---Reading Books-- | ---Playing Chess--- | ---Football---",
+        "icon": "/images/playing-chess.png"
+    },
+    {
+        "title": "Address",
+        "content": "6 Edmund Cresent Nigerian Institute of Medical Research NIMR yaba lagos Nigeria",
+        "icon": "/images/address.png"
+    },
+    {
+        "title": "Social Media",
+        "content": "Twitter: @abdoolkareem_ | WhatsApp +234 816 662 9550",
+        "icon": "/images/web.png"
+    },
+    {
+        "title": "Github",
+        "content": "github.com/AbdulkarimOgaji",
+        "icon": "/images/github.png"
+    },
+    {
+        "title": "Email",
+        "content": "abdulkarimogaji002@gmail.com",
+        "icon": "/images/envelope.png"
+    }
+],
+"subcontent1": "Mature and stable personality, good interpersonal relations, good communication and coordination skills, good sense of responsibility, good team spirit, never afraid of difficulties, dare to meet challenges, for new things to accept the ability to be strong, life and work attitude positive, hope to improve their own continuous progress.",
+"subcontent2": ""
+
+}

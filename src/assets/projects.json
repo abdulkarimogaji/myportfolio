@@ -1,0 +1,115 @@
+[
+    {
+        "name": "YouTube Playlist Downloader",
+        "img": "/images/youtube.png",
+        "description": "This is a terminal App written in Python making use of the pytube module. It takes the youtube playlist url and automatically downloads all the videos in any format specified",
+        "link": "https://github.com/AbdulkarimOgaji/Youtube-Playlist-Downloader",
+        "technologies": [
+            {
+                "name": "Python",
+                "img": "/images/python.png"
+            }
+        ]
+    },
+    {
+        "name": "Simple Bank Go",
+        "img": "/images/go.png",
+        "description": "This is a project simulating a bank REST API service written mostly in go. Includes user authentication and authorization with json web tokens (jwt), Unit tests and E2E tests with 90% coverage",
+        "link": "https://github.com/AbdulkarimOgaji/kkmoney",
+        "technologies": [
+            {
+                "name": "Gin Framework",
+                "img": "/images/go.png"
+            },
+            {
+                "name": "HTML",
+                "img": "/images/html.png"
+            },
+            {
+                "name": "MySql",
+                "img": "/images/mysql.png"
+            },
+            {
+                "name": "Docker",
+                "img": "/images/docker.png"
+            }
+
+        ]
+    },
+    {
+        "name": "Simple Bank Node",
+        "img": "/images/node-js.png",
+        "description": "This is a project simulating a bank REST API service written in node js with typescript. Includes user authentication and authorization with json web tokens (jwt), Unit tests and E2E tests with cypress",
+        "link": "https://github.com/AbdulkarimOgaji/kkmoney-node",
+        "technologies": [
+            {
+                "name": "Express js",
+                "img": "/images/javascript.png"
+            },
+            {
+                "name": "Node js",
+                "img": "/images/node-js.png"
+            },
+            {
+                "name": "Typescript",
+                "img": "/images/typescript.png"
+            },
+            {
+                "name": "Mongodb",
+                "img": "/images/mongodb.png"
+            },
+            {
+                "name": "Docker",
+                "img": "/images/docker.png"
+            }
+        ]
+    },
+    {
+        "name": "Co-founder --> Sunflower",
+        "img": "/images/sunflower-logo.png",
+        "description": "A decentralised platform for secure and transparent charity donations Sunflower allows people to choose the best charities to donate fund based on their purpose and mission.",
+        "link": "#",
+        "technologies": [
+            {
+                "name": "Web3 js",
+                "img": "/images/javascript.png"
+            },
+            {
+                "name": "Typescript",
+                "img": "/images/typescript.png"
+            },
+            {
+                "name": "Vue js",
+                "img": "/images/vuejs.png"
+            },
+            {
+                "name": "Tailwind css",
+                "img": "/images/tailwindcss.png"
+            }
+        ]
+    },
+    {
+        "name": "My Website",
+        "img": "/images/react.png",
+        "description": "An awesome looking Single Page Application using React, Typescript, sass, react-router, bootstrap",
+        "link": "github.com/AbdulkarimOgaji/myportfolio",
+        "technologies": [
+            {
+                "name": "React js",
+                "img": "/images/react.png"
+            },
+            {
+                "name": "Typescript",
+                "img": "/images/typescript.png"
+            },
+            {
+                "name": "Sass js",
+                "img": "/images/sass.png"
+            },
+            {
+                "name": "Bootstrap",
+                "img": "/images/bootstrap.png"
+            }
+        ]
+    }
+]

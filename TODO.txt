@@ -1,0 +1,24 @@
+interests:
+	golang
+	web3
+	react
+	node
+projects:
+	sunflower
+	kkmoney
+	simple bank-go
+	simple bank-node
+	
+courses learned:
+	same as cv
+bio:
+	
+	
+skills:
+	javascript and typescript
+	node js
+	mysql, mongodb
+	golang
+	python
+	
+

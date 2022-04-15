@@ -1,8 +1,8 @@
-export const SideBar = () => {
+export const SideBar = ({ darkMode }:{darkMode: boolean}) => {
   return (
-    <div className="sidebar bg-dark col-3 ms-5 text-white">
+    <div className={`${ darkMode ? 'bg-dark' : 'bg-light'} sidebar myBrad col-3 ms-5 d-xl-block d-none`}>
       <div className="d-flex justify-content-center mt-5">
-        <div className="myBrad overflow-hidden p-1 myDark">
+        <div className={`${ darkMode ? 'border' : 'myDark'} myBrad overflow-hidden p-1 `}>
           <img
             src="/images/mainpic.jpg"
             style={{
@@ -17,7 +17,7 @@ export const SideBar = () => {
       </div>
       <h4 className="text-center m-2 fw-bold my-4">Abdulkarim Ogaji</h4>
       <p className="text-center mb-4">
-        <small className="myDark border-3 p-2"> Web Developer </small>
+        <small className={`${ darkMode ? 'myDark border-3' : 'myBrad border'} p-2`}> Web Developer </small>
       </p>
       <hr />
       <ul>

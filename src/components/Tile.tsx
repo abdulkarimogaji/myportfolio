@@ -4,12 +4,20 @@ type TileProp = {
     content: string;
     icon: string;
   };
+  darkMode: boolean;
 };
 
-export const Tile = ({ tileData }: TileProp) => {
+export const Tile = ({ tileData, darkMode }: TileProp) => {
   return (
-    <div className="myBrad myDark d-flex py-4 align-items-center shadow-lg myTileWidth p-4 mb-3">
-      <i className={tileData.icon + " fs-1 myAlternate me-4"}></i>
+    <div
+      className={`${
+        darkMode ? "myDark" : "border"
+      } myBrad d-flex align-items-center py-4 shadow-lg myTileWidth p-4 mb-3`}
+    >
+      <div className="me-3">
+        {" "}
+        <img src={tileData.icon} alt={tileData.title} />
+      </div>
       <div className="mb-3">
         <h5 className="fw-bold my-3">{tileData.title}</h5>
         <small>{tileData.content}</small>
