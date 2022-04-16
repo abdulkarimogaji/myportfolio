@@ -54,6 +54,25 @@
 .notLink {
     box-shadow: 10px 10px 10px rgb(20, 20, 20);
 }
+.sm {
+    font-size: 1rem;
+    @media screen and (max-width: 768px) {
+        font-size: 0.7rem
+      }
+    
+}
+.vsm {
+    @media screen and (max-width: 768px) {
+        font-size: 0.5rem
+      }
+    
+}
+.jombimg {
+    width: 20rem;
+    @media screen and (max-width: 768px) {
+        width: 10rem;
+    }
+}
 // import bootstrap
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-icons/font/bootstrap-icons.scss';

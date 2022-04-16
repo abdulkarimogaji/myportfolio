@@ -1,13 +1,12 @@
 import { SideBar } from "./components/SideBar";
 import { NavBar } from "./components/NavBar";
-import { BodyContent } from "./components/BodyContent";
+import { Skills } from "./components/Skills"
 import { Projects } from "./components/Projects";
 import { Courses } from "./components/Courses";
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import bio from "./assets/bio.json";
-import skills from "./assets/skills.json";
 import projects from "./assets/projects.json";
+import { About } from "./components/About";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,7 +14,7 @@ function App() {
     <div
       className={`${
         darkMode ? "myDarker text-white" : ""
-      }  App container-fluid row pb-lg-5`}
+      }  App container-fluid row pb-lg-5 fs-lg-6 sm`}
     >
       <SideBar darkMode={darkMode} />
       <div
@@ -25,41 +24,12 @@ function App() {
       >
         <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
-          <Route
-            index
-            element={
-              <BodyContent
-                pageContent={{
-                  pageName: "About Me",
-                  subHeader: "About",
-                }}
-                json={bio}
-                darkMode={darkMode}
-              />
-            }
-          />
-          <Route
-            path="bio"
-            element={
-              <BodyContent
-                pageContent={{
-                  pageName: "About Me",
-                  subHeader: "About",
-                }}
-                json={bio}
-                darkMode={darkMode}
-              />
-            }
-          />
+          <Route index element={<About darkMode={darkMode} />} />
+          <Route path="bio" element={<About  darkMode={darkMode}/>} />
           <Route
             path="skills"
             element={
-              <BodyContent
-                pageContent={{
-                  pageName: "My Skills",
-                  subHeader: "Technologies",
-                }}
-                json={skills}
+              <Skills
                 darkMode={darkMode}
               />
             }

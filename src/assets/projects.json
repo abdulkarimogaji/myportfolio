@@ -1,16 +1,29 @@
 [
     {
-        "name": "YouTube Playlist Downloader",
-        "img": "/images/youtube.png",
-        "description": "This is a terminal App written in Python making use of the pytube module. It takes the youtube playlist url and automatically downloads all the videos in any format specified",
-        "link": "https://github.com/AbdulkarimOgaji/Youtube-Playlist-Downloader",
+        "name": "Sunflower",
+        "img": "/images/sunflower-logo.png",
+        "description": "Co-founder. Sunflower is a decentralised platform for secure and transparent charity donations Sunflower allows people to choose the best charities to donate fund based on their purpose and mission.",
+        "link": "#",
         "technologies": [
             {
-                "name": "Python",
-                "img": "/images/python.png"
+                "name": "Web3 js",
+                "img": "/images/javascript.png"
+            },
+            {
+                "name": "Typescript",
+                "img": "/images/typescript.png"
+            },
+            {
+                "name": "Vue js",
+                "img": "/images/vuejs.png"
+            },
+            {
+                "name": "Tailwind css",
+                "img": "/images/tailwind-css.png"
             }
         ]
     },
+    
     {
         "name": "Simple Bank Go",
         "img": "/images/go.png",
@@ -64,30 +77,7 @@
             }
         ]
     },
-    {
-        "name": "Co-founder --> Sunflower",
-        "img": "/images/sunflower-logo.png",
-        "description": "A decentralised platform for secure and transparent charity donations Sunflower allows people to choose the best charities to donate fund based on their purpose and mission.",
-        "link": "#",
-        "technologies": [
-            {
-                "name": "Web3 js",
-                "img": "/images/javascript.png"
-            },
-            {
-                "name": "Typescript",
-                "img": "/images/typescript.png"
-            },
-            {
-                "name": "Vue js",
-                "img": "/images/vuejs.png"
-            },
-            {
-                "name": "Tailwind css",
-                "img": "/images/tailwindcss.png"
-            }
-        ]
-    },
+    
     {
         "name": "My Website",
         "img": "/images/react.png",
@@ -109,6 +99,18 @@
             {
                 "name": "Bootstrap",
                 "img": "/images/bootstrap.png"
+            }
+        ]
+    },
+    {
+        "name": "YouTube Playlist Downloader",
+        "img": "/images/youtube.png",
+        "description": "This is a terminal App written in Python making use of the pytube module. It takes the youtube playlist url and automatically downloads all the videos in any format specified",
+        "link": "https://github.com/AbdulkarimOgaji/Youtube-Playlist-Downloader",
+        "technologies": [
+            {
+                "name": "Python",
+                "img": "/images/python.png"
             }
         ]
     }

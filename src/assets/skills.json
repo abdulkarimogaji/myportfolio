@@ -1,51 +1,117 @@
-{"tiles" : [
+[
     {
-        "title": "Go",
-        "content": "Go is the most powerful, performant, and scalable programming language for creating web applications, web APIs, micro-services, and other distributed services.",
-        "icon": "/images/go.png"
+        "name": "Languages",
+        "list": [
+            {
+                "title": "Go",
+                "content": "Go is the most powerful, performant, and scalable programming language for creating web applications, web APIs, micro-services, and other distributed services.",
+                "icon": "/images/go.png"
+            },
+            {
+                "title": "Python",
+                "content": "Python is a popular programming language for that can be used for web development (server-side),software development, scripting.",
+                "icon": "/images/python.png"
+            },
+            {
+                "title": "Javascript & Typescript",
+                "content": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project",
+                "icon": "/images/javascript.png"
+            }
+        ]
     },
     {
-        "title": "React",
-        "content": "React is a declarative, efficient, and flexible JavaScript library for building user interfaces",
-        "icon": "/images/react.png"
+        "name": "Frameworks",
+        "list": [
+            {
+                "title": "React",
+                "content": "React is a declarative, efficient, and flexible JavaScript library for building user interfaces",
+                "icon": "/images/react.png"
+            },
+            {
+                "title": "Vue js",
+                "content": "Vue js is a progressive framework for building user interfaces.",
+                "icon": "/images/vuejs.png"
+            },
+            {
+                "title": "Gin",
+                "content": "Gin is a high-performance HTTP web framework written in Golang (Go)",
+                "icon": "/images/go2.png"
+            }
+        ]
     },
     {
-        "title": "Node & Typescript",
-        "content": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project",
-        "icon": "/images/nodejs.png"
+        "name": "Web Services",
+        "list": [
+            {
+                "title": "REST APIS",
+                "content": " It is an architectural style that defines a set of rules in order to create Web Services",
+                "icon": "/images/web.png"
+            }
+        ]
+    },  
+    {
+        "name": "Database Managaement",
+        "list": [
+            {
+                "title": "Postgres",
+                "content": "open source database management system. It supports both SQL and JSON for relational and non-relational queries for extensibility and SQL compliance.",
+                "icon": "/images/postgresql.png"
+            },
+            {
+                "title": "MySQL",
+                "content": " MySQL is a leading open source database management system. It is a multi-user, multithreaded database management system",
+                "icon": "/images/mysql.png"
+            },
+            {
+                "title": "MongoDB",
+                "content": "MongoDB, the most popular NoSQL database, is an open-source document-oriented database. ",
+                "icon": "/images/mongodb.png"
+            }
+        ]
     },
     {
-        "title": "Python",
-        "content": "Python is a popular programming language for that can be used for web development (server-side),software development, scripting.",
-        "icon": "/images/python.png"
+        "name": "Software Containerization",
+        "list": [
+            {
+                "title": "Docker",
+                "content": "Docker is an open source containerization platform. It enables developers to package applications into containers",
+                "icon": "/images/docker.png"
+            }
+        ]
     },
     {
-        "title": "Vue js",
-        "content": "Vue js is a progressive framework for building user interfaces.",
-        "icon": "/images/vuejs.png"
+        "name": "Styling",
+        "list": [
+            {
+                "title": "CSS",
+                "content": "",
+                "icon": "/images/css-file.png"
+            },
+            {
+                "title": "SASS",
+                "content": "",
+                "icon": "/images/sass.png"
+            },
+            {
+                "title": "Bootstrap",
+                "content": "",
+                "icon": "/images/bootstrap.png"
+            },
+            {
+                "title": "Tailwind css",
+                "content": "",
+                "icon": "/images/tailwind-css.png"
+            }
+        ]
     },
     {
-        "title": "Databases",
-        "content": "I can work with SQL and No-SQL Databases. I am familiar with MYSQL, PostgresQL and MongoDb",
-        "icon": "/images/postgresql.png"
-    },
-    {
-        "title": "Docker",
-        "content": "Docker is an open source containerization platform. It enables developers to package applications into containers",
-        "icon": "/images/docker.png"
-    },
-    {
-        "title": "Web3 js",
-        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natusfacere animi ratione suscipit!",
-        "icon": "/images/typescript.png"
-    },
-    {
-        "title": "Styling",
-        "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natusfacere animi ratione suscipit!",
-        "icon": "/images/sass.png"
-    }
-],
-"subcontent1": "",
-"subcontent2": ""
-
-}
+        "name": "",
+        "list": [
+            {
+                "title": "Web3 & Solidity",
+                "content": "Web3 is a new generation of the internet that runs on public blockchains",
+                "icon": "/images/web3.png"
+            }
+        ]
+    }    
+]
