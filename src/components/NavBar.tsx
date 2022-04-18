@@ -5,16 +5,16 @@ export const NavBar = ({ darkMode, setDarkMode }: {darkMode: boolean, setDarkMod
         <div className="nav col-xl-8 col-11 p-0 m-0">
         <ul className="d-flex myDark vsm container justify-content-lg-around justify-content-between align-items-center bg-yellow p-lg-4 p-3 py-2">
           <li>
-            <NavLink to="/skills">My Skills</NavLink>
+            <NavLink to="/skills" className={'myAnim'}>My Skills</NavLink>
           </li>
           <li>
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink to="/projects" className={'myAnim'}>Experience</NavLink>
           </li>
           <li>
-            <NavLink to="/courses">Courses Learned</NavLink>
+            <NavLink to="/courses" className={'myAnim'}>Courses</NavLink>
           </li>
           <li>
-            <NavLink to="/bio">Bio</NavLink>
+            <NavLink to="/bio" className={'myAnim'}>Bio</NavLink>
           </li>
           <li>
             <button className={darkMode ? 'myactive myBrad border px-2 myAlternate' : 'myDark border myBrad px-2 text-white'} onClick={e => setDarkMode(!darkMode)}>{darkMode ? 'Light Mode': 'Dark Mode'}</button>

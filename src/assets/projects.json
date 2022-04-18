@@ -1,9 +1,11 @@
 [
     {
         "name": "Sunflower",
-        "img": "/images/sunflower-logo.png",
+        "img": "/images/sunflower.png",
         "description": "Co-founder. Sunflower is a decentralised platform for secure and transparent charity donations Sunflower allows people to choose the best charities to donate fund based on their purpose and mission.",
-        "link": "#",
+        "link": "https://github.com/AbdulkarimOgaji",
+        "start_time": "19 February 2021",
+        "end_time": "On going",
         "technologies": [
             {
                 "name": "Web3 js",
@@ -23,10 +25,30 @@
             }
         ]
     },
+    {
+        "name": "Designed a Portfolio",
+        "img": "/images/react.png",
+        "description": "Desgined a 4-Page portfolio site for a client with React and Tailwind css",
+        "link": "https://github.com/AbdulkarimOgaji",
+        "start_time": "2 March 2022",
+        "end_time": "6 March 2022",
+        "technologies": [
+            {
+                "name": "React",
+                "img": "/images/react.png"
+            },
+            {
+                "name": "Tailwind css",
+                "img": "/images/tailwind-css.png"
+            }
+        ]
+    },
     
     {
-        "name": "Simple Bank Go",
+        "name": "Project: Simple Bank Go",
         "img": "/images/go.png",
+        "start_time": "",
+        "end_time": "",
         "description": "This is a project simulating a bank REST API service written mostly in go. Includes user authentication and authorization with json web tokens (jwt), Unit tests and E2E tests with 90% coverage",
         "link": "https://github.com/AbdulkarimOgaji/kkmoney",
         "technologies": [
@@ -50,8 +72,10 @@
         ]
     },
     {
-        "name": "Simple Bank Node",
+        "name": "Project: Simple Bank Node",
         "img": "/images/node-js.png",
+        "start_time": "",
+        "end_time": "",
         "description": "This is a project simulating a bank REST API service written in node js with typescript. Includes user authentication and authorization with json web tokens (jwt), Unit tests and E2E tests with cypress",
         "link": "https://github.com/AbdulkarimOgaji/kkmoney-node",
         "technologies": [
@@ -79,8 +103,10 @@
     },
     
     {
-        "name": "My Website",
+        "name": "Project: My Website",
         "img": "/images/react.png",
+        "start_time": "",
+        "end_time": "",
         "description": "An awesome looking Single Page Application using React, Typescript, sass, react-router, bootstrap",
         "link": "github.com/AbdulkarimOgaji/myportfolio",
         "technologies": [
@@ -103,14 +129,42 @@
         ]
     },
     {
-        "name": "YouTube Playlist Downloader",
+        "name": "Project: YouTube Playlist Downloader",
         "img": "/images/youtube.png",
+        "start_time": "",
+        "end_time": "",
         "description": "This is a terminal App written in Python making use of the pytube module. It takes the youtube playlist url and automatically downloads all the videos in any format specified",
         "link": "https://github.com/AbdulkarimOgaji/Youtube-Playlist-Downloader",
         "technologies": [
             {
                 "name": "Python",
                 "img": "/images/python.png"
+            }
+        ]
+    },
+    {
+        "name": "Project: Quiz App",
+        "img": "/images/python.png",
+        "start_time": "10th October 2021",
+        "end_time": "1st December 2021",
+        "description": "A web application built for university students to practice quiz questions as well as allowing upload of questions in many formats",
+        "link": "https://mbbs-study.herokuapp.com",
+        "technologies": [
+            {
+                "name": "Django",
+                "img": "/images/python.png"
+            },
+            {
+                "name": "HTML",
+                "img": "/images/html.png"
+            },
+            {
+                "name": "CSS",
+                "img": "/images/css-file.png"
+            },
+            {
+                "name": "Javascript",
+                "img": "/images/javascript.png"
             }
         ]
     }

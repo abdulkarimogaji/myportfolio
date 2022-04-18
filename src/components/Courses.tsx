@@ -1,7 +1,8 @@
 import courses from "../assets/courses.json"
 export const Courses = ({ darkMode }: { darkMode: boolean}) => {
     return (<section className="ms-2 mt-5 mt-lg-3">
-        <h1 className="h2 fw-bold mb-5">Courses Learned</h1>
+        <h1 className="h2 fw-bold">Courses Learned</h1>
+        <div className="after"></div>
         {
             courses.map((course, i) => 
                 <div key={i} className="my-lg-5 my-3">

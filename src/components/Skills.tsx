@@ -7,7 +7,8 @@ export const Skills = ({
 }: { darkMode: boolean}) => {
   return (
     <section className="ms-2 mt-5 mt-lg-3">
-      <h1 className="h2 fw-bold mb-5">My Skills</h1>
+      <h1 className="h2 fw-bold">My Skills</h1>
+      <div className="after"></div>
 
       {
         skills.map((skill, i) => <div key={i}>

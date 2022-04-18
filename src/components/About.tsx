@@ -3,12 +3,14 @@ import bioData from "../assets/bio.json"
 export const About = ({ darkMode }: { darkMode: boolean }) => {
   return (
     <section className="ms-2 mt-5 mt-lg-3 mb-5">
-      <h1 className="h2 fw-bold mb-5">About Me</h1>
+      <h1 className="h2 fw-bold">About Me</h1>
+      <div className="after"></div>
       <p className="text-center pt-2 mb-3">
         <img
           src="/images/subpic.jpg"
           style={{ borderRadius: "100%" }}
           className="jombimg"
+          alt="Ogaji Abdulkarim"
         />
       </p>
       <h5 className="text-center mb-5">ABDULKARIM OGAJI</h5>
@@ -25,7 +27,7 @@ export const About = ({ darkMode }: { darkMode: boolean }) => {
             key={i}
             className={`${
               darkMode ? "myDark" : "border"
-            } myBrad d-flex flex-column flex-lg-row align-items-center py-lg-4 py-2 shadow-lg myTileWidth p-lg-4 p-2 mb-3 me-3`}
+            } myBrad d-flex flex-column flex-lg-row align-items-lg-center align-items-start py-lg-4 py-2 shadow-lg myTileWidth p-lg-4 p-2 mb-3 me-3`}
           >
             <div className="me-3">
               <img src={bio.image} alt="" />

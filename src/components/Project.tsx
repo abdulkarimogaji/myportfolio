@@ -4,6 +4,8 @@ type ProjectProps = {
     img: string;
     description: string;
     link: string;
+    start_time: string
+    end_time: string
     technologies: {
       name: string;
       img: string;
@@ -23,13 +25,19 @@ export const Project = ({ projectData, darkMode }: ProjectProps) => {
       <p className="text-center">
         <img src={projectData.img} alt="" style={{width:"3rem"}} />
       </p>
-      <small className="">{projectData.description}</small>
+      {
+        projectData.start_time && <>
+          <small >Start Time: {projectData.start_time}</small><br/>
+          <small>End Time: {projectData.end_time}</small> <br /> <br />
+        </>
+      }
+      <small>{projectData.description}</small>
       <div className="mt-lg-5 mt-3">
         <div className="d-flex flex-wrap">
           {projectData.technologies.map((t) => (
             <div className="myBrad d-flex py-lg-2 px-lg-3 border me-lg-2 mb-2 py-1 px-2 me-1">
               <small>{t.name}</small>
-              <img src={t.img} className="d-none d-lg-block" style={{ width: "1rem", marginLeft:"7px" }} />
+              <img src={t.img} className="d-none d-lg-block" alt={t.name} style={{ width: "1rem", marginLeft:"7px" }} />
             </div>
           ))}
         </div>
@@ -37,6 +45,8 @@ export const Project = ({ projectData, darkMode }: ProjectProps) => {
       <p className="text-end mt-3 me-3">
         <a
           href={projectData.link}
+          target="_blank"
+          rel="noreferrer"
           className={darkMode ? "myAlternate" : "text-dark"}
         >
           <i className="bi bi-github fs-4"></i>
