@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 
 const NavBar = () => {
   const router = useRouter();
-  console.log(router.pathname);
   return (
     <header>
       <div className="progress"></div>
@@ -12,7 +11,7 @@ const NavBar = () => {
         <Image src="/favicon.ico" width="20px" height="20px" alt="logo" />
         <ul>
           <li>
-            <Link href="" className={router.pathname == "/" ? "active" : ""}>
+            <Link href="/" className={router.pathname === "/" ? "active" : ""}>
               Home
             </Link>
           </li>

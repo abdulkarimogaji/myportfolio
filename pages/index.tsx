@@ -6,12 +6,12 @@ const Home: NextPage = () => {
       <h1 className="big-header">
         Web and Android Developer creating thoughtful, intuitive interfaces.
       </h1>
-      <p>
+      <p className="content">
         Hi, I am Neel Bavarva, a pre-final year electronics and communications
         engineering undergraduate pursuing my bachelor&apos;s degree from NIT
         Surat, India.
       </p>
-      <p>
+      <p className="content">
         I am a self taught programmer. Through constant learning and creation, I
         produce aesthetic software to the highest standard. I enjoy competing in
         hackathons and working on software projects. I also like to work on my
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <a className="btn round"><i className="bi bi-linkedin"></i></a>
         <a className="btn pill">Email me</a>
       </div>
-      <hr className="custom-rule" />
+      <hr />
       <div>
         <h3>Skills</h3>
         <div className="skill">

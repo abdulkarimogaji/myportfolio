@@ -1,0 +1,13 @@
+[
+  {
+    "title": "WhatsLication",
+    "description": "An android application through which one can scan his/her bill and all the products will be scanned, categorised and will be added to his/her monthly expenses. This app also shows top 100 crypto currencies and clicking on particular crypto all the information (along with chart) will be displayed.",
+    "img_url": "/automart.png",
+    "links": [
+      {
+        "text": "github",
+        "url": "https://github.com/AbdulkarimOgaji"
+      }
+    ]
+  }
+]
