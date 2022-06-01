@@ -39,6 +39,12 @@ body {
   padding: 0;
 }
 
+.hr {
+  position: relative;
+  height: 80px;
+  margin: 1rem 0;
+}
+
 /* nav bar */
 header {
   top: 0;

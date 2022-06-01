@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +24,9 @@ const Home: NextPage = () => {
         <a className="btn round"><i className="bi bi-linkedin"></i></a>
         <a className="btn pill">Email me</a>
       </div>
-      <hr />
+      <div className="hr">
+        <Image src="/line.png" alt="hr" layout="fill" />
+      </div>
       <div>
         <h3>Skills</h3>
         <div className="skill">

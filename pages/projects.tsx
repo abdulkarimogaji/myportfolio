@@ -1,5 +1,6 @@
 import Project from "../components/Project";
 import projects from "../assets/projects.json"
+import Image from "next/image";
 const Projects = () => {
   return (
     <div className="projects">
@@ -10,7 +11,10 @@ const Projects = () => {
         are Next.js, React Native and Node. Here are some of my personal
         projects and the projects I made during hackathons.
       </p>
-      <hr />
+      <div className="hr">
+      <Image src="/line.png" alt="hr" layout="fill"/>
+      </div>
+      
       {
         projects.map(proj => <Project data={proj} key={proj.title} />)
       }
