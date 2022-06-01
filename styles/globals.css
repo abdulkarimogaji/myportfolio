@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: monospace, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -103,7 +103,7 @@ nav a:hover, nav a:focus {
 }
 
 .content {
-  word-spacing: 0.5rem;
+  word-spacing: 0.1rem;
   margin-bottom: 2.5rem;
   line-height: 2rem;
 }
@@ -201,4 +201,64 @@ h2 {
   font-size: 2.2rem;
   font-weight: 500;
   margin-bottom: 0;
+}
+
+.resume {
+  margin-top: 4rem;
+  padding: 4rem 13rem;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 27%);
+}
+
+.resume a {
+  text-decoration: none;
+  color:hsl(0, 0%, 27%)
+}
+
+.resume h2 {
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  
+}
+
+.resume h3 {
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+  margin-top: 4rem;
+}
+
+h4 {
+  letter-spacing: 1px;
+}
+
+.resume li {
+  word-spacing: 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.btn-download {
+  font-size: 0.7rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center a {
+  margin: 0 0.5rem;
+}
+
+.box {
+  background-color: var(--button-background);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: var(--button-border);
+}
+
+.end {
+  text-align: end;
 }
