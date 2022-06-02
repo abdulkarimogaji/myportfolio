@@ -15,7 +15,7 @@ const Project = ({ data }: Props) => {
   return (
     <>
       <div className="projects--image">
-        <Image src="/automart.png" alt="automart" layout="fill" />
+        <Image src="/automart.png" alt="automart" layout="fill" className="contain" />
       </div>
       <div className="project--details">
         <h2>{data.title}</h2>

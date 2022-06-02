@@ -1,6 +1,6 @@
 const Resume = () => {
   return (
-    <div className="resume">
+    <div className="container">
       <div className="box">
         <div className="end">
           <a href="" className="btn btn-download">
@@ -10,12 +10,14 @@ const Resume = () => {
 
         <div className="center">
           <h2 style={{ marginBottom: "1.4rem" }}>Abdulkarim Ogaji</h2>
-          <a className="links">+2348166629550</a>
-          <a className="links">Email</a>
-          <a className="links">LinkedIn</a>
-          <a className="links">Github</a>
-          <a className="links">Abdulkarim</a>
-          <a className="links">Ogaji</a>
+          <div className="flex-wrap">
+            <a className="links">+2348166629550</a>
+            <a className="links">Email</a>
+            <a className="links">LinkedIn</a>
+            <a className="links">Github</a>
+            <a className="links">Abdulkarim</a>
+            <a className="links">Ogaji</a>
+          </div>
         </div>
         <h3 style={{ marginTop: "4rem" }}>Work Experience</h3>
         <div>

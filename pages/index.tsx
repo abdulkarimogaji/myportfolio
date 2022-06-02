@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
-    <div className="home">
-      <h1 className="">
+    <div className="container">
+      <h1>
         Web and Android Developer creating thoughtful, intuitive interfaces.
       </h1>
       <p className="content">
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         hackathons and working on software projects. I also like to work on my
         problem solving skills on <a className="links">Leetcode</a> and CodeChef. Here&apos;s my resume.
       </p>
-      <div>
+      <div className="flex-wrap">
         <a className="btn round"><i className="bi bi-github"></i></a>
         <a className="btn round"><i className="bi bi-twitter"></i></a>
         <a className="btn round"><i className="bi bi-linkedin"></i></a>

@@ -3,7 +3,7 @@ import projects from "../assets/projects.json"
 import Image from "next/image";
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="container">
       <h1>Projects</h1>
       <p className="content">
         I enjoy competing in hackathons and working on software projects.

@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const Links = () => {
   return (
-    <div className="links-page">
+    <div className="container">
+<div className="links-page">
       <div className="profile-img">
         <Image
           src="/profile.jpg"
@@ -54,6 +55,8 @@ const Links = () => {
         </a>
       </div>
     </div>
+    </div>
+    
   );
 };
 
