@@ -4,7 +4,7 @@ import Image from "next/image";
 const Home: NextPage = () => {
   return (
     <div className="home">
-      <h1 className="big-header">
+      <h1 className="">
         Web and Android Developer creating thoughtful, intuitive interfaces.
       </h1>
       <p className="content">
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <a className="btn round"><i className="bi bi-github"></i></a>
         <a className="btn round"><i className="bi bi-twitter"></i></a>
         <a className="btn round"><i className="bi bi-linkedin"></i></a>
-        <a className="btn pill">Email me</a>
+        <a className="btn pill projects--a">Email me</a>
       </div>
       <div className="hr">
         <Image src="/line.png" alt="hr" layout="fill" />

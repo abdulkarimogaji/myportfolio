@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
 
 :root {
-  --font_light: "Monalisa_Light";
-  --font_normal: "Monalisa_Regular";
-  --font_bold: "Monalisa_Bold";
   --button-background: #fafafa;
   --button-border: 1px solid #eaeaea;
   --button-background-hover: #f6f6f6;
@@ -21,7 +18,7 @@ body::-webkit-scrollbar-track {
   background: #fff;
 }
 
-html::selection {
+*::selection {
   background: rgba(0,50,228,.3);
 }
 
@@ -34,9 +31,51 @@ body::-webkit-scrollbar {
 }
 
 body {
-  font-family: monospace, sans-serif;
+  font-family: 'Inconsolata';
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
+}
+
+h3 {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+h2 {
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+
+h4 {
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 17%);
+}
+
+
+/* === GLOBAL CLASSES === */
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.end {
+  text-align: end;
 }
 
 .hr {
@@ -45,7 +84,48 @@ body {
   margin: 1rem 0;
 }
 
-/* nav bar */
+.links {
+  border-bottom: 3px solid #d9d9d9;
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.links:hover {
+  color: #8f48eb;
+  border-bottom-color: #cdbce4;
+}
+
+.btn {
+  padding: 0.3em 0.8em;
+  background-color: var(--button-background);
+  border: var(--button-border);
+  transition: var(--hover-transition);
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--button-background-hover);
+  border-color: var(--button-border-hover)
+}
+
+.content {
+  word-spacing: 0.1rem;
+  margin-bottom: 2.5rem;
+  line-height: 2rem;
+}
+
+.round {
+  border-radius: 50%;
+  padding: 0.6rem 0.8rem ;
+}
+
+.pill {
+  border-radius: 15px;
+}
+
+
+/* === NAV BAR === */
 header {
   top: 0;
   position: fixed;
@@ -57,7 +137,7 @@ header {
 }
 
 .progress {
-  height: 3px;
+  height: 5px;
   width: 100%;
   background: linear-gradient(to right, red, blue);
 }
@@ -95,57 +175,14 @@ nav a:hover, nav a:focus {
   background-color: var(--button-background);
 }
 
-/*Home Page*/
 
 
+/* === HOME PAGE === */
 .home {
   margin-top: 4rem;
-  padding: 4rem 15rem;
+  padding: 4rem 13rem;
 }
 
-.big-header {
-  font-size: 3.5rem;
-  font-weight: 500;
-  color: hsl(0, 0%, 17%);
-}
-
-.content {
-  word-spacing: 0.1rem;
-  margin-bottom: 2.5rem;
-  line-height: 2rem;
-}
-
- .links {
-  border-bottom: 3px solid #d9d9d9;
-  transition: 350ms;
-  cursor: pointer;
-}
-
-.links:hover {
-  color: #8f48eb;
-  border-bottom-color: #cdbce4;
-}
-
-.btn {
-  padding: 0.3em 0.8em;
-  background-color: var(--button-background);
-  border: var(--button-border);
-  transition: var(--hover-transition);
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: var(--button-background-hover);
-  border-color: var(--button-border-hover)
-}
-
-h3 {
-  letter-spacing: 2px;
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 0;
-}
 
 .skill {
   display: flex;
@@ -163,30 +200,18 @@ h3 {
   opacity: 0.7;
 }
 
-.round {
-  border-radius: 100%;
-  padding: 0.5rem 0.8rem ;
-}
 
-.pill {
-  border-radius: 15px;
-}
-
-hr {
-  margin: 4rem 0; 
-}
-
-/* Projects */
+/* === PROJECTS PAGE === */
 
 .projects {
   margin-top: 4rem;
   padding: 4rem 15rem;
 }
 
-.projects a {
+.projects--a {
   color: hsl(0, 0%, 27%);
   text-decoration: none;
-  padding: 0.3rem 1.4rem;
+  padding: 0.5rem 1.5rem;
   text-shadow: var(--bold);
   margin-right: 3rem;
 }
@@ -203,13 +228,7 @@ hr {
   padding: 0 3rem;
 }
 
-h2 {
-  letter-spacing: 2px;
-  font-size: 2.2rem;
-  font-weight: 500;
-  margin-bottom: 0;
-}
-
+/* === RESUME PAGE === */
 .resume {
   margin-top: 4rem;
   padding: 4rem 13rem;
@@ -225,17 +244,12 @@ h2 {
 .resume h2 {
   letter-spacing: 1px;
   font-size: 1.8rem;
-  
 }
 
 .resume h3 {
   letter-spacing: 1px;
   font-size: 1.7rem;
   margin-top: 4rem;
-}
-
-h4 {
-  letter-spacing: 1px;
 }
 
 .resume li {
@@ -251,9 +265,7 @@ h4 {
   border-radius: 6px;
 }
 
-.center {
-  text-align: center;
-}
+
 
 .center a {
   margin: 0 0.5rem;
@@ -266,9 +278,7 @@ h4 {
   border: var(--button-border);
 }
 
-.end {
-  text-align: end;
-}
+
 
 /* links page */
 
@@ -342,7 +352,3 @@ h4 {
   /* text-shadow: var(--bold); */
 }
 
-.grid-center {
-  display: grid;
-  place-items: center;
-}

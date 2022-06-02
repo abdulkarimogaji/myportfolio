@@ -4,7 +4,7 @@ import Image from "next/image";
 const Projects = () => {
   return (
     <div className="projects">
-      <h1 className="big-header">Projects</h1>
+      <h1>Projects</h1>
       <p className="content">
         I enjoy competing in hackathons and working on software projects.
         I&apos;m largely framework agnostic but technologies I love right now

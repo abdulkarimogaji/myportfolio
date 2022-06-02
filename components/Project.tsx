@@ -22,7 +22,7 @@ const Project = ({ data }: Props) => {
         <p className="content">{data.description}</p>
         <div>
           {data.links.map((link) => (
-            <a className="btn pill" href={link.url} key={link.text}>
+            <a className="btn pill projects--a" href={link.url} key={link.text}>
               {" "}
               {link.text}
             </a>
