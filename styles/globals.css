@@ -51,8 +51,9 @@ header {
   position: fixed;
   left:0;
   right: 0;
-  backdrop-filter: blur(54px);
-  z-index: 1;
+  backdrop-filter: blur(20px);
+  z-index: 100;
+  background-color: hsla(0, 0%, 100%, 0.8);
 }
 
 .progress {
