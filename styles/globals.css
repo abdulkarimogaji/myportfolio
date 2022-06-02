@@ -98,6 +98,12 @@ h1 {
   border-bottom: 3px solid #d9d9d9;
   transition: 350ms;
   cursor: pointer;
+  color: hsl(0, 0%, 27%);
+  text-decoration: none;
+}
+
+.link2 {
+  color: #8f48eb;
 }
 
 .links:hover {
@@ -254,10 +260,6 @@ nav a:hover, nav a:focus {
   color: hsl(0, 0%, 27%);
 }
 
-.box a {
-  text-decoration: none;
-  color:hsl(0, 0%, 27%)
-}
 
 .box h2 {
   letter-spacing: 1px;
@@ -281,6 +283,8 @@ nav a:hover, nav a:focus {
   font-size: 0.7rem;
   padding: 0.7rem 1.2rem;
   border-radius: 6px;
+  text-decoration: none;
+  color: hsl(0, 0%, 27%);
 }
 
 
@@ -309,6 +313,8 @@ nav a:hover, nav a:focus {
 
 .links--a {
   display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 27%);
 }
 .links-page strong {
   display: block;
@@ -364,6 +370,18 @@ nav a:hover, nav a:focus {
 }
 
 
+
+@media (max-width: 900px) {
+  .container{
+    padding: 4rem 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 4rem 6rem;
+  }
+}
 
 
 
