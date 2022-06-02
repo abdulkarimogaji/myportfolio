@@ -19,10 +19,9 @@ const Home: NextPage = () => {
         <a className="links" target="_blank" href="">
           Leetcode
         </a>{" "}
-        and {" "}
+        and{" "}
         <a className="links" href="" target="_blank">
-        
-           Hackerrank
+          Hackerrank
         </a>
         . Here&apos;s my{" "}
         <a className="links" download href="/CV_ABDULKARIMOGAJI.pdf">
@@ -31,16 +30,39 @@ const Home: NextPage = () => {
         .
       </p>
       <div className="flex-wrap">
-        <a className="btn round">
+        <a
+          className="btn round"
+          href="https://github.com/AbdulkarimOgaji"
+          target="_blank"
+          rel="noreferrer"
+          style={{color:"hsl(0, 0%, 27%)"}}
+        >
           <i className="bi bi-github"></i>
         </a>
-        <a className="btn round">
+        <a
+          className="btn round"
+          href="https://twitter.com/abdoolkareem_"
+          target="_blank"
+          rel="noreferrer"
+          style={{color:"hsl(0, 0%, 27%)"}}
+        >
           <i className="bi bi-twitter"></i>
         </a>
-        <a className="btn round">
+        <a
+          className="btn round"
+          href="https://www.linkedin.com/in/abdulkarim-ogaji/"
+          target="_blank"
+          rel="noreferrer"
+          style={{color:"hsl(0, 0%, 27%)"}}
+        >
           <i className="bi bi-linkedin"></i>
         </a>
-        <a className="btn pill projects--a" href="mailto: abdulkarimogaji002@gmail.com">Email me</a>
+        <a
+          className="btn pill projects--a"
+          href="mailto: abdulkarimogaji002@gmail.com"
+        >
+          Email me
+        </a>
       </div>
       <div className="hr">
         <Image src="/line.png" alt="hr" layout="fill" />
@@ -49,7 +71,9 @@ const Home: NextPage = () => {
         <h3>Skills</h3>
         <div className="skill">
           <p className="skill--type">Languages</p>
-          <p className="skill--content">Golang, Javascript/Typescript, Python</p>
+          <p className="skill--content">
+            Golang, Javascript/Typescript, Python
+          </p>
         </div>
         <div className="skill">
           <p className="skill--type">Frameworks</p>
@@ -61,9 +85,7 @@ const Home: NextPage = () => {
         </div>
         <div className="skill">
           <p className="skill--type">Familiar With</p>
-          <p className="skill--content">
-            RPC, Block Chain, MySQL, Docker
-          </p>
+          <p className="skill--content">RPC, Block Chain, MySQL, Docker</p>
         </div>
       </div>
     </div>

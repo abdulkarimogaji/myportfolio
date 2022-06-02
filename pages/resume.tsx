@@ -15,10 +15,26 @@ const Resume = () => {
         <div className="center">
           <h2 style={{ marginBottom: "1.4rem" }}>Abdulkarim Ogaji</h2>
           <div className="flex-wrap" style={{ justifyContent: "center" }}>
-            <a className="links">+2348166629550</a>
-            <a className="links">Email</a>
-            <a className="links">LinkedIn</a>
-            <a className="links">Github</a>
+            <button className="links">+2348166629550</button>
+            <a href="mailto: abdulkarimogaji002@gmail.com" className="links">
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abdulkarim-ogaji/"
+              target="_blank"
+              rel="noreferrer"
+              className="links"
+            >
+              LinkedIn
+            </a>
+            <a
+              className="links"
+              href="https://github.com/AbdulkarimOgaji"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
             <a className="links">Abdulkarim</a>
             <a className="links">Ogaji</a>
           </div>
@@ -56,7 +72,9 @@ const Resume = () => {
               donate fund based on their purpose and mission.
             </li>
 
-            <li>Techs Used : Vue.js, Solidity, web3.js, Metamask API, Tailwind css</li>
+            <li>
+              Techs Used : Vue.js, Solidity, web3.js, Metamask API, Tailwind css
+            </li>
           </ul>
         </div>
       </div>
