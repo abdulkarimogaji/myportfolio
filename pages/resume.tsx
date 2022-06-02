@@ -3,14 +3,18 @@ const Resume = () => {
     <div className="container">
       <div className="box">
         <div className="end">
-          <a href="/CV_ABDULKARIMOGAJI.pdf" className="btn btn-download" download>
+          <a
+            href="/CV_ABDULKARIMOGAJI.pdf"
+            className="btn btn-download"
+            download
+          >
             Download pdf
           </a>
         </div>
 
         <div className="center">
           <h2 style={{ marginBottom: "1.4rem" }}>Abdulkarim Ogaji</h2>
-          <div className="flex-wrap">
+          <div className="flex-wrap" style={{ justifyContent: "center" }}>
             <a className="links">+2348166629550</a>
             <a className="links">Email</a>
             <a className="links">LinkedIn</a>
@@ -22,50 +26,37 @@ const Resume = () => {
         <h3 style={{ marginTop: "4rem" }}>Work Experience</h3>
         <div>
           <h4>
-            React Native Developer Intern at UIPRO | 3rd May - 5th August (2021)
-            | Certificate
+            React Developer Intern at MEVSUITES | 3rd May - 5th June (2022) |{" "}
+            <a className="link2" href="">
+              Certificate
+            </a>
           </h4>
           <ul>
             <li>
-              Made an Android application of an e-commerce app from scratch
-              using React Native, an e-commerce application which also allows
-              users to customize their product.
+              Added a new feature to the main application that allow the users
+              to send bulk messages to international numbers
             </li>
-            <li>
-              Worked on a CRM application (A retailer and customer side
-              application which allows users to directly interact with retailers
-              for the service of the product), implemented and deployed to
-              production.
-            </li>
+            <li>Worked in a team as part of the React front end developers</li>
           </ul>
           <h3>Technical Skills</h3>
           <ul>
-            <li>Languages: Java, JavaScript</li>
+            <li>Languages: Golang, JavaScript/Typescript, Python</li>
             <li>
               Frameworks: React.js, React Native, Next.js, Node.js, Express.js,
-              Spring Boot
-            </li>
-            <li>
-              Frameworks: React.js, React Native, Next.js, Node.js, Express.js,
-              Spring Boot
+              Gin
             </li>
             <li>Familiar With: DBMS, Computer Networks, MySQL, Docker</li>
           </ul>
           <h3>Projects</h3>
-          <h4>
-            Finance Tracker | Hackathon at inOut7.0 | 27th Nov - 22nd Dec (2020)
-          </h4>
+          <h4>Sunflower | 27th February - 20th Apr (2022)</h4>
           <ul>
             <li>
-              An Android app that allows users to scan their bills and have all
-              of their purchases added to their daily expenses.
+              A decentralised platform for secure and transparent charity
+              donations Sunflower allows people to choose the best charities to
+              donate fund based on their purpose and mission.
             </li>
 
-            <li>
-              Techs Used : React Native, Node.js, mongoDB, Flask, Heroku,
-              Tensorflow, Cloudinary, Google Cloud Vision API
-            </li>
-            <li>Project Links : GitHub | Playstore</li>
+            <li>Techs Used : Vue.js, Solidity, web3.js, Metamask API, Tailwind css</li>
           </ul>
         </div>
       </div>
