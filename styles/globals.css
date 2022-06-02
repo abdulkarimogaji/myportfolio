@@ -36,7 +36,10 @@ body {
   padding: 0;
   letter-spacing: 1px;
 }
-
+button {
+  border: none;
+  background-color: transparent;
+}
 h3 {
   letter-spacing: 2px;
   font-size: 2rem;

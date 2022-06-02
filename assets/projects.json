@@ -6,7 +6,11 @@
     "links": [
       {
         "text": "github",
-        "url": "https://github.com/AbdulkarimOgaji"
+        "url": "https://github.com/AbdulkarimOgaji/automart"
+      },
+      {
+        "text": "PAAS",
+        "url": "https://automart-mern.herokuapp.com"
       }
     ]
   }
