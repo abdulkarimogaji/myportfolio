@@ -1,7 +1,7 @@
 [
   {
-    "title": "WhatsLication",
-    "description": "An android application through which one can scan his/her bill and all the products will be scanned, categorised and will be added to his/her monthly expenses. This app also shows top 100 crypto currencies and clicking on particular crypto all the information (along with chart) will be displayed.",
+    "title": "Automart",
+    "description": "A MERN applicaion which is an online marketplace for automobiles, with Auto Mart users posting their cars for sale.",
     "img_url": "/automart.png",
     "links": [
       {
