@@ -365,6 +365,18 @@ nav a:hover, nav a:focus {
 
 
 
+@media (max-width: 900px) {
+  .container{
+    padding: 4rem 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 4rem 6rem;
+  }
+}
+
 
 
 @media (max-width: 600px) {

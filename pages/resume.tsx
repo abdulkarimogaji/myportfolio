@@ -3,7 +3,7 @@ const Resume = () => {
     <div className="container">
       <div className="box">
         <div className="end">
-          <a href="" className="btn btn-download">
+          <a href="/CV_ABDULKARIMOGAJI.pdf" className="btn btn-download" download>
             Download pdf
           </a>
         </div>
