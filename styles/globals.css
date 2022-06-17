@@ -442,3 +442,62 @@ nav a:hover, nav a:focus {
     right: calc(50% - 8rem)
   }
 }
+
+.cards-section {
+  display: flex;
+  gap: 5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  height: 13rem;
+  width: 20rem;
+  border-radius: 2rem;
+  background: linear-gradient(to bottom left, rgb(209, 127, 97), hsl(0, 0%, 47%));
+  color: white;
+  border: 0.5px solid black;
+  cursor: pointer;
+  transition: 250ms;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.5px solid transparent;
+  border-radius: 2rem;
+  background-color: black;
+  opacity: 0;
+  transition: 250ms;
+}
+
+.card:hover, .card:focus {
+  flex-grow: 0.6;
+}
+
+.card--icons {
+  margin-top: 1rem;
+  visibility: hidden;
+}
+
+.card:focus::after, .card:hover::after {
+  opacity: 0.4;
+}
+
+.card strong {
+  text-transform: uppercase;
+}
+
+.card:focus .card--image, .card:hover .card--icons {
+  visibility: visible;
+}
