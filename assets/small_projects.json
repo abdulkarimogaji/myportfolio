@@ -1,19 +1,11 @@
 [
   {
-    "title": "Multi-Step Signup Form",
+    "title": "Multi-Step Signup Form (React)",
     "github": "https://github.com/AbdulkarimOgaji/progressive-signup-form"
   },
   {
     "title": "Responsive NavBar with SASS",
     "github": "https://github.com/AbdulkarimOgaji/responsive-navbar-without-js"
-  },
-  {
-    "title": "Oauth2 authorization",
-    "github": "https://github.com/AbdulkarimOgaji/oauth2-server"
-  },
-  {
-    "title": "jwt authorization",
-    "github": "https://github.com/AbdulkarimOgaji/jwt-authorization"
   },
   {
     "title": "Youtube Playlist Downloader Python",
@@ -30,5 +22,9 @@
   {
     "title": "Skeleton Loading with SASS",
     "github": "https://github.com/AbdulkarimOgaji/frontend-master"
+  },
+  {
+    "title": "Quiz App with Django",
+    "github": "https://mbbs-study.herokuapp.com"
   }
 ]
