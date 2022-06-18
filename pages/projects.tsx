@@ -1,8 +1,10 @@
 import Project from "../components/Project";
 import projects from "../assets/projects.json";
 import small_projects from "../assets/small_projects.json";
+import open_source from "../assets/open_source.json";
 import Image from "next/image";
 import Card from "../components/Card";
+
 const Projects = () => {
   return (
     <div className="container">
@@ -20,7 +22,8 @@ const Projects = () => {
       {projects.map((proj) => (
         <Project data={proj} key={proj.title} />
       ))}
-      <br /><br />
+      <br />
+      <br />
       <h2>Other Projects</h2>
       <p className="content">
         During my learning and practicing phase, I have taken on some small
@@ -29,12 +32,23 @@ const Projects = () => {
       </p>
 
       <section className="cards-section">
-      {
-        small_projects.map((proj) => (
+        {small_projects.map((proj) => (
           <Card data={proj} key={proj.title} />
-        )) 
-      }
+        ))}
       </section>
+      <br />
+      <br />
+      <h2>Open Source Contributions</h2>
+      <ul>
+        {open_source.map((proj) => (
+          <li key={proj.title}>
+            <h4>
+              {proj.title} | <a href={proj.github}>Github</a>
+            </h4>
+            <p className="content">{proj.description}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
