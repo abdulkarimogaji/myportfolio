@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Automart",
+    "description": "A MERN applicaion which is an online marketplace for automobiles, with Auto Mart users posting their cars for sale.",
+    "img_url": "/automart.png",
+    "links": [
+      {
+        "text": "github",
+        "url": "https://github.com/AbdulkarimOgaji/automart"
+      },
+      {
+        "text": "Live app",
+        "url": "https://automart-mern.herokuapp.com"
+      }
+    ]
+  },
+  {
+    "title": "Chat App",
+    "description": "A fullstack android chat application entirely from scratch. The backend service is created using Gin Framework (Golang) and the frontend with React Native",
+    "img_url": "/whatslication.png",
+    "links": [
+      {
+        "text": "github",
+        "url": "https://github.com/AbdulkarimOgaji/whatslication"
+      }
+    ]
+  },
+  {
+    "title": "Blog App",
+    "description": "A Backend service for a blogging application built with nestjs. Includes user authentication and authorization. MongoDB Database",
+    "img_url": "/whatslication.png",
+    "links": [
+      {
+        "text": "github",
+        "url": "https://github.com/AbdulkarimOgaji/blog-app-nestjs"
+      }
+    ]
+  }
+]
