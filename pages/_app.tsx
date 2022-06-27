@@ -4,7 +4,6 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import NavBar from "../components/NavBar";
 import Head from 'next/head';
-import { HistoryProvider } from '../context/History';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
