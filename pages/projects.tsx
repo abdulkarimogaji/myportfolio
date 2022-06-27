@@ -4,10 +4,17 @@ import small_projects from "../assets/small_projects.json";
 import open_source from "../assets/open_source.json";
 import Image from "next/image";
 import Card from "../components/Card";
+import { useTransition, animated } from "react-spring";
 
-const Projects = () => {
-  return (
-    <div className="container">
+const Projects = ({ previousPath, currentPath}: any) => {
+  const from = previousPath === "/" ? {x: 1000} : {x:-1000}
+  const transitions = useTransition(true, {
+    from,
+    enter: { x: 0 },
+    reverse: true,
+  })
+  return transitions( (style, item) => item && 
+    <animated.div className="container" style={style}>
       <h1>Projects</h1>
       <p className="content">
         I enjoy competing in hackathons and working on software projects.
@@ -49,7 +56,7 @@ const Projects = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </animated.div>
   );
 };
 

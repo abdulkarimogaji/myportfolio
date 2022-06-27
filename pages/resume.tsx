@@ -1,6 +1,12 @@
+import { useTransition, animated } from "react-spring";
+
 const Resume = () => {
-  return (
-    <div className="container">
+  const transitions = useTransition(true, {
+    from: { x: +1000 },
+    enter: { x: 0 }
+  })
+  return transitions( (style, item) => item && 
+    <animated.div className="container" style={style}>
       <div className="box">
         <div className="end">
           <a
@@ -78,7 +84,7 @@ const Resume = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 
