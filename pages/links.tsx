@@ -1,8 +1,17 @@
 import Image from "next/image";
+import { useTransition, animated } from "react-spring";
+
 
 const Links = () => {
-  return (
-    <div className="container">
+  const transitions = useTransition(true, {
+    from: { x: +1000 },
+    enter: { x: 0 },
+    leave: { x: -1000 },
+    to: {x: -1000},
+    reverse: false,
+  })
+  return transitions( (style, item) => item &&
+    <animated.div className="container" style={style}>
       <div className="links-page">
         <div className="profile-img">
           <Image
@@ -54,7 +63,7 @@ const Links = () => {
           </a>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 

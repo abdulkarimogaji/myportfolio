@@ -1,9 +1,15 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import { useTransition, animated } from "react-spring";
+
 
 const Home: NextPage = () => {
-  return (
-    <div className="container">
+  const transitions = useTransition(true, {
+    from: { x: -1000 },
+    enter: { x: 0 },
+  })
+  return transitions((styles, item) => item &&
+    <animated.div className="container" style={styles}>
       <h1>
         Web and Android Developer creating thoughtful, intuitive interfaces.
       </h1>
@@ -35,7 +41,7 @@ const Home: NextPage = () => {
           href="https://github.com/AbdulkarimOgaji"
           target="_blank"
           rel="noreferrer"
-          style={{color:"hsl(0, 0%, 27%)"}}
+          style={{ color: "hsl(0, 0%, 27%)" }}
         >
           <i className="bi bi-github"></i>
         </a>
@@ -44,7 +50,7 @@ const Home: NextPage = () => {
           href="https://twitter.com/abdoolkareem_"
           target="_blank"
           rel="noreferrer"
-          style={{color:"hsl(0, 0%, 27%)"}}
+          style={{ color: "hsl(0, 0%, 27%)" }}
         >
           <i className="bi bi-twitter"></i>
         </a>
@@ -53,7 +59,7 @@ const Home: NextPage = () => {
           href="https://www.linkedin.com/in/abdulkarim-ogaji/"
           target="_blank"
           rel="noreferrer"
-          style={{color:"hsl(0, 0%, 27%)"}}
+          style={{ color: "hsl(0, 0%, 27%)" }}
         >
           <i className="bi bi-linkedin"></i>
         </a>
@@ -88,7 +94,7 @@ const Home: NextPage = () => {
           <p className="skill--content">RPC, Block Chain, MySQL, Docker</p>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 

@@ -4,8 +4,17 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import NavBar from "../components/NavBar";
 import Head from 'next/head';
+import { HistoryProvider } from '../context/History';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { pathname } = useRouter()
+  const [history, setHistory] = useState<[string, string]>(["/", "/"])
+
+  useEffect(() => {
+    setHistory(prev => [prev[1], pathname])
+  }, [pathname])
   return (
     <>
     <Head>
@@ -13,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <NavBar />
-      <Component {...pageProps} />
+      <Component {...pageProps} currentPath={history[1]} previousPath={history[0]} />
     </>
   );
 }
