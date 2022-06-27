@@ -1,9 +1,12 @@
+import { useMemo } from "react";
 import { useTransition, animated } from "react-spring";
 
-const Resume = () => {
-  const transitions = useTransition(true, {
-    from: { x: +1000 },
-    enter: { x: 0 }
+const Resume = ({previousPath, currentPath}: any) => {
+  const currPath = useMemo(() => currentPath, [])
+  const from = previousPath === "/" || previousPath === "/projects" ? {x: 1000} : {x:-1000}
+  const transitions = useTransition(currPath == previousPath, {
+    from,
+    enter: { x: 0 },
   })
   return transitions( (style, item) => item && 
     <animated.div className="container" style={style}>
