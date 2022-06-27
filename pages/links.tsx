@@ -5,10 +5,7 @@ import { useTransition, animated } from "react-spring";
 const Links = () => {
   const transitions = useTransition(true, {
     from: { x: +1000 },
-    enter: { x: 0 },
-    leave: { x: -1000 },
-    to: {x: -1000},
-    reverse: false,
+    enter: { x: 0 }
   })
   return transitions( (style, item) => item &&
     <animated.div className="container" style={style}>

@@ -5,13 +5,14 @@ import open_source from "../assets/open_source.json";
 import Image from "next/image";
 import Card from "../components/Card";
 import { useTransition, animated } from "react-spring";
+import { useMemo } from "react";
 
 const Projects = ({ previousPath, currentPath}: any) => {
+  const currPath = useMemo(() => currentPath, [])
   const from = previousPath === "/" ? {x: 1000} : {x:-1000}
-  const transitions = useTransition(true, {
+  const transitions = useTransition(currPath == previousPath, {
     from,
     enter: { x: 0 },
-    reverse: true,
   })
   return transitions( (style, item) => item && 
     <animated.div className="container" style={style}>
