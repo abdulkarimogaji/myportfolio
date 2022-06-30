@@ -1,14 +1,14 @@
 import { useMemo } from "react";
 import { useTransition, animated } from "react-spring";
 
-const Resume = ({previousPath, currentPath}: any) => {
+const Resume = ({ previousPath, currentPath }: any) => {
   const currPath = useMemo(() => currentPath, [])
-  const from = previousPath === "/" || previousPath === "/projects" ? {x: 1000} : {x:-1000}
+  const from = previousPath === "/" || previousPath === "/projects" ? { x: 1000 } : { x: -1000 }
   const transitions = useTransition(currPath == previousPath, {
     from,
     enter: { x: 0 },
   })
-  return transitions( (style, item) => item && 
+  return transitions((style, item) => item &&
     <animated.div className="container" style={style}>
       <div className="box">
         <div className="end">
@@ -65,12 +65,11 @@ const Resume = ({previousPath, currentPath}: any) => {
           </ul>
           <h3>Technical Skills</h3>
           <ul>
-            <li>Languages: Golang, JavaScript/Typescript, Python</li>
+            <li>Languages: Golang, JavaScript/Typescript</li>
             <li>
-              Frameworks: React.js, React Native, Next.js, Node.js, Express.js,
-              Gin
+              Frameworks: React, Nestjs, Gin
             </li>
-            <li>Familiar With: DBMS, Computer Networks, MySQL, Docker</li>
+            <li>Familiar With: React Native, React Query, Redux toolkit (+ RTKQ), Nextjs</li>
           </ul>
           <h3>Projects</h3>
           <h4>Sunflower | 27th February - 20th Apr (2022)</h4>
@@ -85,6 +84,37 @@ const Resume = ({previousPath, currentPath}: any) => {
               Techs Used : Vue.js, Solidity, web3.js, Metamask API, Tailwind css
             </li>
           </ul>
+          <h4>AutoMart | 10th May - 20th May (2022)</h4>
+          <ul>
+            <li>
+              A MERN applicaion which is an online marketplace for automobiles, with Auto Mart users posting their cars for sale. (React + MongoDB + Express)
+            </li>
+
+            <li>
+              Techs Used : MongoDB, Express, React, Nodejs, Heroku
+            </li>
+          </ul>
+          <h4>BlogNado-signup | 29th July - 30th July (2022)</h4>
+          <ul>
+            <li>
+              A progressive signup form for my blogging application (BLOGNADO)
+            </li>
+
+            <li>
+              Techs Used : React, Redux
+            </li>
+          </ul>
+          <h3>Certifications</h3>
+          <h4>Responsive Web Design| <a className="link2"
+            target="_blank"
+            rel="noreferrer" href="https://freecodecamp.org/certification/Grandmaster002/responsive-web-design">
+            Certificate
+          </a></h4>
+          <li>Free Code Camp</li>
+          <h3>Open Source Contributions</h3>
+          <h4>Coding Resources API | <a href="https://github.com/the-api-administration/coding-resources-api" className="link2" target="_blank"
+            rel="noreferrer"> Github</a> | <a target="_blank"
+              rel="noreferrer" href="https://coding-resources-api.herokuapp.com/ " className="link2">Live Demo</a></h4>
         </div>
       </div>
     </animated.div>
