@@ -14,9 +14,7 @@ type Props = {
 const Project = ({ data }: Props) => {
   return (
     <>
-      <div className="projects--image">
-        {/* place images here */}
-      </div>
+
       <div className="project--details">
         <h2>{data.title}</h2>
         <p className="content">{data.description}</p>
@@ -35,6 +33,11 @@ const Project = ({ data }: Props) => {
           ))}
         </div>
       </div>
+      {
+        data.img_url && <div className="projects--image">
+          <Image src={data.img_url} layout="fill" alt={data.title} />
+        </div>
+      }
     </>
   );
 };
