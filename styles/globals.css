@@ -242,12 +242,10 @@ nav a:hover, nav a:focus {
 }
 
 .projects--image {
-  width: 100%;
+  width: min(60rem, 80%);
   position: relative;
-  border-radius: 20px;
-  height: 500px;
-  margin: 4rem 0;
-  background: linear-gradient(to bottom left, rgb(209, 127, 97), hsl(0, 0%, 47%));
+  height: 30rem;
+  margin: 4rem auto;
   border: 1px solid black
 }
 
@@ -510,4 +508,31 @@ nav a:hover, nav a:focus {
 
 .card:focus .card--image, .card:hover .card--icons {
   visibility: visible;
+}
+
+.skill-icon-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem
+}
+
+.skill-icon {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  
+}
+
+.pad {
+  padding: 2rem;
+  border-radius: 50%;
+  border: var(--button-border);
+  border-width: 4px;
+  transition: 250ms;
+}
+
+.pad:hover, .pad:focus {
+  border-color: var(--button-background-hover);
 }
