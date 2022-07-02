@@ -11,19 +11,22 @@ const Home: NextPage = () => {
   return transitions((styles, item) => item &&
     <animated.div className="container" style={styles}>
       <h1>
-        Full-Stack Developer creating thoughtful, intuitive interfaces.
+        Full-Stack Developer
       </h1>
       <p className="content">
-        Hi, I am Abdulkarim Ogaji, an adaptable and passionate developer with
+        Hi, I am <strong>Abdulkarim Ogaji</strong>, an adaptable and passionate developer with
         quick learning capabilities. I&apos;m currently based in Lagos, Nigeria.
       </p>
       <p className="content">
         I am a self taught programmer. Through constant learning and practice, I
         produce aesthetic software to the highest standard.
         . Here&apos;s my{" "}
-        <a className="links" download href="/CV_ABDULKARIMOGAJI.pdf">
-          resume
-        </a>
+        <strong>
+
+          <a className="links" download href="/CV_ABDULKARIMOGAJI.pdf">
+            resume
+          </a>
+        </strong>
         .
       </p>
       <div className="flex-wrap">
@@ -65,29 +68,29 @@ const Home: NextPage = () => {
         <Image src="/line.png" alt="hr" layout="fill" />
       </div>
       <div>
-        <h3 style={{textAlign: "center"}}>Skills</h3>
+        <h3 style={{ textAlign: "center" }}>Skills</h3>
         <div className="skill-icon-container">
           <div className="pad">
             <div className="skill-icon">
-              <Image src="/react.png" layout="fill" className="icon-image"/>
+              <Image src="/react.png" layout="fill" className="icon-image" />
             </div>
           </div>
           <div className="pad">
             <div className="skill-icon">
-              <Image src="/go.png" layout="fill" className="icon-image"/>
+              <Image src="/go.png" layout="fill" className="icon-image" />
             </div>
           </div>
           <div className="pad">
             <div className="skill-icon">
-              <Image src="/nodejs.png" layout="fill" className="icon-image"/>
+              <Image src="/nodejs.png" layout="fill" className="icon-image" />
             </div>
           </div>
           <div className="pad">
             <div className="skill-icon">
-              <Image src="/mongodb.png" layout="fill" className="icon-image"/>
+              <Image src="/mongodb.png" layout="fill" className="icon-image" />
             </div>
           </div>
-        
+
         </div>
       </div>
     </animated.div>
