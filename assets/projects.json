@@ -50,7 +50,7 @@
   {
     "title": "Blognado",
     "description": "A full-stack blogging application built with react + nestjs + MongoDB",
-    "img_url": "/whatslication.png",
+    "img_url": "/blognado.png",
     "links": [
       {
         "text": "github",
