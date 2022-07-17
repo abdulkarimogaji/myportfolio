@@ -1,5 +1,20 @@
 [
   {
+    "title": "Blognado",
+    "description": "A full-stack blogging application built with react + nestjs + MongoDB",
+    "img_url": "/blognado.png",
+    "links": [
+      {
+        "text": "github",
+        "url": "https://github.com/AbdulkarimOgaji/blog-app-nestjs"
+      },
+      {
+        "text": "Live demo",
+        "url": "https://blognado.vercel.app"
+      }
+    ]
+  },
+  {
     "title": "Multi Step Signup Form",
     "description": "A multi step sign up form with form validation with React + Redux",
     "img_url": "/multi.png",
@@ -44,17 +59,6 @@
       {
         "text": "github",
         "url": "https://github.com/AbdulkarimOgaji/whatslication"
-      }
-    ]
-  },
-  {
-    "title": "Blognado",
-    "description": "A full-stack blogging application built with react + nestjs + MongoDB",
-    "img_url": "/blognado.png",
-    "links": [
-      {
-        "text": "github",
-        "url": "https://github.com/AbdulkarimOgaji/blog-app-nestjs"
       }
     ]
   }

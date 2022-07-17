@@ -18,7 +18,7 @@ const Project = ({ data }: Props) => {
       <div className="project--details">
         <h2>{data.title}</h2>
         <p className="content">{data.description}</p>
-        <div>
+        <div style={{display: 'flex', flexWrap: 'wrap'}}>
           {data.links.map((link) => (
             <a
               className="btn pill projects--a"
