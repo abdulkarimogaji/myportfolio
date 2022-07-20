@@ -107,7 +107,19 @@ const Resume = ({ previousPath, currentPath }: any) => {
           <h3>Certifications</h3>
           <h4>Responsive Web Design| <a className="link2"
             target="_blank"
-            rel="noreferrer" href="https://freecodecamp.org/certification/Grandmaster002/responsive-web-design">
+            rel="noreferrer" href="https://freecodecamp.org/certification/AbdulkarimOgaji/responsive-web-design">
+            Certificate
+          </a></h4>
+          <li>Free Code Camp</li>
+          <h4>Javascript Structures and Algorithms| <a className="link2"
+            target="_blank"
+            rel="noreferrer" href="https://freecodecamp.org/certification/AbdulkarimOgaji/javascript-algorithms-and-data-structures">
+            Certificate
+          </a></h4>
+          <li>Free Code Camp</li>
+          <h4>Frontend Developement Libraries <a className="link2"
+            target="_blank"
+            rel="noreferrer" href="https://freecodecamp.org/certification/AbdulkarimOgaji/front-end-development-libraries">
             Certificate
           </a></h4>
           <li>Free Code Camp</li>
