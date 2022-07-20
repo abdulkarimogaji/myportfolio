@@ -15,7 +15,10 @@ const Home: NextPage = () => {
       </h1>
       <p className="content">
         Hi, I am <strong>Abdulkarim Ogaji</strong>, an adaptable and passionate developer with
-        quick learning capabilities. I&apos;m currently based in Lagos, Nigeria.
+        quick learning capabilities. I&apos;m currently based in Lagos, Nigeria. Here are my <strong>
+          <a className="links" href="#home-skills">
+            skills
+          </a> </strong>
       </p>
       <p className="content">
         I am a self taught programmer. Through constant learning and practice, I
@@ -67,6 +70,7 @@ const Home: NextPage = () => {
       <div className="hr">
         <Image src="/line.png" alt="hr" layout="fill" />
       </div>
+      <section id="home-skills"></section>
       <div>
         <h3 style={{ textAlign: "center" }}>Skills</h3>
         <div className="skill-icon-container">
