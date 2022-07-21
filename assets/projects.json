@@ -1,7 +1,7 @@
 [
   {
     "title": "Blognado",
-    "description": "A full-stack blogging application built with react + nestjs + MongoDB",
+    "description": "A full-stack blogging application where users can read, write, like, and share knowledge on various subjects built with react + nestjs + MongoDB",
     "img_url": "/blognado.png",
     "links": [
       {
