@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap");
 
 :root {
   --button-background: #fafafa;
@@ -19,14 +19,16 @@ body::-webkit-scrollbar-track {
 }
 
 *::selection {
-  background: rgba(0,50,228,.3);
+  background: rgba(0, 50, 228, 0.3);
 }
 
 body::-webkit-scrollbar {
   width: 0.4rem;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -35,11 +37,10 @@ html {
 }
 
 body {
-  font-family: 'Inconsolata', sans-serif;
+  font-family: "Inconsolata", sans-serif;
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
-  
 }
 button {
   border: none;
@@ -59,7 +60,6 @@ h2 {
   margin-bottom: 0;
 }
 
-
 h4 {
   letter-spacing: 1px;
 }
@@ -69,7 +69,6 @@ h1 {
   font-weight: 600;
   color: hsl(0, 0%, 17%);
 }
-
 
 /* === GLOBAL CLASSES === */
 
@@ -124,13 +123,13 @@ h1 {
   background-color: var(--button-background);
   border: var(--button-border);
   transition: var(--hover-transition);
-  margin:0 1rem 1rem 0 ;
+  margin: 0 1rem 1rem 0;
   cursor: pointer;
 }
 
 .btn:hover {
   background-color: var(--button-background-hover);
-  border-color: var(--button-border-hover)
+  border-color: var(--button-border-hover);
 }
 
 .content {
@@ -145,19 +144,18 @@ h1 {
 
 .round {
   border-radius: 50%;
-  padding: 0.6rem 0.8rem ;
+  padding: 0.6rem 0.8rem;
 }
 
 .pill {
   border-radius: 15px;
 }
 
-
 /* === NAV BAR === */
 header {
   top: 0;
   position: fixed;
-  left:0;
+  left: 0;
   right: 0;
   backdrop-filter: blur(20px);
   z-index: 100;
@@ -184,14 +182,14 @@ nav ul {
   margin-right: 2rem;
 }
 
-
 nav a {
   text-decoration: none;
   color: #777;
   padding: 0.5rem 1.3rem;
   border-radius: 3px;
 }
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   background-color: var(--button-background-hover);
   color: hsl(0, 0%, 27%);
   text-shadow: var(--bold);
@@ -204,14 +202,11 @@ nav a:hover, nav a:focus {
   background-color: var(--button-background);
 }
 
-
-
 /* === HOME PAGE === */
 .home {
   margin-top: 4rem;
   padding: 4rem 13rem;
 }
-
 
 .skill {
   display: flex;
@@ -229,7 +224,6 @@ nav a:hover, nav a:focus {
 .skill--content {
   opacity: 0.7;
 }
-
 
 /* === PROJECTS PAGE === */
 
@@ -250,7 +244,6 @@ nav a:hover, nav a:focus {
   position: relative;
   height: 30rem;
   margin: 4rem auto;
-  border: 1px solid black
 }
 
 .project--details {
@@ -266,7 +259,6 @@ nav a:hover, nav a:focus {
   font-size: 0.9rem;
   color: hsl(0, 0%, 27%);
 }
-
 
 .box h2 {
   letter-spacing: 1px;
@@ -294,15 +286,9 @@ nav a:hover, nav a:focus {
   color: hsl(0, 0%, 27%);
 }
 
-
-
 .center a {
   margin: 0 0.5rem;
 }
-
-
-
-
 
 /* links page */
 
@@ -336,7 +322,8 @@ nav a:hover, nav a:focus {
   position: relative;
 }
 
-.links--hr::before, .links--hr::after {
+.links--hr::before,
+.links--hr::after {
   position: absolute;
   content: "";
   height: 2px;
@@ -369,17 +356,15 @@ nav a:hover, nav a:focus {
   font-size: smaller;
 }
 
-
-.links--a:hover, .links--a:focus {
+.links--a:hover,
+.links--a:focus {
   background-color: var(--button-background-hover);
   border: 1px solid var(--button-border-hover);
   /* text-shadow: var(--bold); */
 }
 
-
-
 @media (max-width: 900px) {
-  .container{
+  .container {
     padding: 4rem 4rem;
   }
 }
@@ -390,11 +375,12 @@ nav a:hover, nav a:focus {
   }
 }
 
-
-
 @media (max-width: 600px) {
+  .projects--a {
+    font-size: small;
+  }
   .container {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     margin-bottom: 4rem;
     margin-top: 1rem;
   }
@@ -423,11 +409,11 @@ nav a:hover, nav a:focus {
     top: auto;
   }
   header a {
-    padding: 0.5rem 0.8rem
+    padding: 0.5rem 0.8rem;
   }
 
   .project--details {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
   .box {
     padding: 1rem;
@@ -444,14 +430,15 @@ nav a:hover, nav a:focus {
     font-size: 0.7rem;
     line-height: 1rem;
   }
-  .links--hr::after, .links--hr::before {
+  .links--hr::after,
+  .links--hr::before {
     width: 2rem;
   }
   .links--hr::before {
-    left: calc(50% - 8rem)
+    left: calc(50% - 8rem);
   }
   .links--hr::after {
-    right: calc(50% - 8rem)
+    right: calc(50% - 8rem);
   }
 }
 
@@ -466,7 +453,11 @@ nav a:hover, nav a:focus {
   height: 13rem;
   width: 20rem;
   border-radius: 2rem;
-  background: linear-gradient(to bottom left, rgb(209, 127, 97), hsl(0, 0%, 47%));
+  background: linear-gradient(
+    to bottom left,
+    rgb(209, 127, 97),
+    hsl(0, 0%, 47%)
+  );
   color: white;
   border: 0.5px solid black;
   cursor: pointer;
@@ -480,7 +471,7 @@ nav a:hover, nav a:focus {
 }
 
 .card::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -493,7 +484,8 @@ nav a:hover, nav a:focus {
   transition: 250ms;
 }
 
-.card:hover, .card:focus {
+.card:hover,
+.card:focus {
   flex-grow: 0.6;
 }
 
@@ -502,7 +494,8 @@ nav a:hover, nav a:focus {
   visibility: hidden;
 }
 
-.card:focus::after, .card:hover::after {
+.card:focus::after,
+.card:hover::after {
   opacity: 0.4;
 }
 
@@ -510,7 +503,8 @@ nav a:hover, nav a:focus {
   text-transform: uppercase;
 }
 
-.card:focus .card--image, .card:hover .card--icons {
+.card:focus .card--image,
+.card:hover .card--icons {
   visibility: visible;
 }
 
@@ -519,14 +513,13 @@ nav a:hover, nav a:focus {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2rem
+  padding: 2rem;
 }
 
 .skill-icon {
   position: relative;
   width: 8rem;
   height: 8rem;
-  
 }
 
 .pad {
@@ -537,6 +530,7 @@ nav a:hover, nav a:focus {
   transition: 250ms;
 }
 
-.pad:hover, .pad:focus {
+.pad:hover,
+.pad:focus {
   border-color: var(--button-background-hover);
 }
