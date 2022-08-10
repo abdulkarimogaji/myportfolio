@@ -1,10 +1,10 @@
-import Image from "next/image";
+import ProjectImage from "./ProjectImage";
 
 type Props = {
   data: {
     title: string;
     description: string;
-    img_url: string;
+    images: string[];
     links: {
       text: string;
       url: string;
@@ -32,14 +32,11 @@ const Project = ({ data }: Props) => {
           ))}
         </div>
       </div>
-      {data.img_url && (
-        <div className="projects--image">
-          <Image
-            src={data.img_url}
-            layout="fill"
-            alt={data.title}
-            objectFit="contain"
-          />
+      {data.images.length && (
+        <div className="flex flex-wrap gap-4 my-16 p-4 bg-gray-100 rounded-3xl justify-center">
+          {data.images.map((src) => (
+            <ProjectImage key={src} src={src} />
+          ))}
         </div>
       )}
     </>

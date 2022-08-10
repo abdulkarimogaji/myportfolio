@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --button-background: #fafafa;
@@ -9,9 +12,12 @@
   --bold: 0 0 1px hsl(0, 0%, 27%);
 }
 
+.cursor-grab {
+  cursor: grab;
+}
+
 body::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background: #c2c9d2;
 }
 
 body::-webkit-scrollbar-track {
@@ -34,6 +40,19 @@ body::-webkit-scrollbar {
 
 html {
   scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-active {
+  background: linear-gradient(
+    to bottom left,
+    rgb(209, 127, 97),
+    hsl(0, 0%, 47%)
+  );
+  color: white;
 }
 
 body {
@@ -184,7 +203,6 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #777;
   padding: 0.5rem 1.3rem;
   border-radius: 3px;
 }
@@ -518,8 +536,8 @@ nav a:focus {
 
 .skill-icon {
   position: relative;
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .pad {
