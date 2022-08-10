@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Script from "next/script";
 import { useTransition, animated } from "react-spring";
+import SkillCube from "../components/SkillCube";
 
 const Home: NextPage = () => {
   const transitions = useTransition(true, {
@@ -12,30 +13,7 @@ const Home: NextPage = () => {
     (styles, item) =>
       item && (
         <>
-          <Script id="analytics-script">
-            {`// for links
-              document.querySelectorAll("a").forEach((tag) => {
-                tag.addEventListener("click", () => {
-                  try {
-                    fetch(
-                      "https://abdulkarim-analytics.herokuapp.com/analytics",
-                      {
-                        headers: [["Content-Type", "application/json"]],
-                        method: "POST",
-                        body: JSON.stringify({
-                          type: "[link clicked]",
-                          source: "portfolio page",
-                          description: "The link -"+  tag.href +"- was clicked",
-                        }),
-                      }
-                    );
-                  } catch (err) {
-                    console.log(err);
-                  }
-                });
-              })`}
-          </Script>
-          <animated.div className="container" style={styles}>
+          <animated.div className="container relative" style={styles}>
             <h1>Full-Stack Developer</h1>
             <p className="content">
               Hi, I am <strong>Abdulkarim Ogaji</strong>, an adaptable and
@@ -93,11 +71,12 @@ const Home: NextPage = () => {
                 Email me
               </a>
             </div>
+            <SkillCube />
+
             <div className="hr">
               <Image src="/line.png" alt="hr" layout="fill" />
             </div>
-            <section id="home-skills"></section>
-            <div>
+            <section id="home-skills">
               <h3 style={{ textAlign: "center" }}>Skills</h3>
               <div className="skill-icon-container">
                 <div className="pad">
@@ -133,7 +112,20 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-            </div>
+              <ul className="flex flex-col gap-8">
+                <li>
+                  <strong>Languages</strong>: JavaScript/Typescript, Golang
+                </li>
+                <li>
+                  <strong>Frameworks</strong>: React, Nextjs, Express, Nestjs,
+                  Gin
+                </li>
+                <li>
+                  <strong>Familiar With</strong>: React Native, React Query,
+                  Redux toolkit (+ RTKQ), React Story Book, Docker
+                </li>
+              </ul>
+            </section>
           </animated.div>
         </>
       )

@@ -2,7 +2,12 @@
   {
     "title": "Blognado",
     "description": "A full-stack blogging application where users can read, write, like, and share knowledge on various subjects built with react + nestjs + MongoDB",
-    "img_url": "/blognado.png",
+    "images": [
+      "/blognado.png",
+      "/blognado2.png",
+      "/blognado3.png",
+      "/blognado4.png"
+    ],
     "links": [
       {
         "text": "github",
@@ -17,7 +22,7 @@
   {
     "title": "Multi Step Signup Form",
     "description": "A multi step sign up form with form validation with React + Redux",
-    "img_url": "/multi.png",
+    "images": ["/signup.png", "/signup2.png", "/signup3.png", "/signup.png"],
     "links": [
       {
         "text": "github",
@@ -32,7 +37,12 @@
   {
     "title": "Automart",
     "description": "A MERN applicaion which is an online marketplace for automobiles, with Auto Mart users posting their cars for sale. (React + MongoDB + Express)",
-    "img_url": "/automart.png",
+    "images": [
+      "/automart.png",
+      "/automart2.png",
+      "/automart3.png",
+      "/automart.png"
+    ],
     "links": [
       {
         "text": "github",
@@ -45,23 +55,14 @@
     ]
   },
   {
-    "title": "Currently Working On",
-    "description": "The following projects are projects very close to completion. The code is still visible on my github",
-    "img_url": "",
-    "links": [
-    ]
-  },
-  {
     "title": "Chat App",
     "description": "A fullstack android chat application entirely from scratch. The backend service is created using Gin Framework (Golang) and the frontend with React Native",
-    "img_url": "/lication.png",
+    "images": ["/chat.png", "/chat1.png", "/chat2.png", "/chat.png"],
     "links": [
       {
         "text": "github",
         "url": "https://github.com/AbdulkarimOgaji/whatslication"
       }
     ]
-
   }
-  
 ]
